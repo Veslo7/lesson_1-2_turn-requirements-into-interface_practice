@@ -173,3 +173,69 @@
 **Ссылка на PR с ТЗ:** [ВСТАВИТЬ ССЫЛКУ]
 
 **Статус:** [СОГЛАСОВАНО]
+
+## 4. Отчёт исполнителя
+
+1. **PR c ТЗ**: https://github.com/Veslo7/lesson_1-2_turn-requirements-into-interface_practice/pull/4**
+   
+2. **ДЗ**: https://github.com/Leo-TOP/Leo-homework2
+3. **PR c реализацией**: https://github.com/Leo-TOP/Leo-homework2/pull/1
+4. **Сайт**: https://leo-top.github.io/Leo-homework2/project
+5. Конструктор: https://github.com/hse-drip-web-2026-2027/lesson_1-2_turn-requirements-into-interface_helpers
+6. Выбрал 1-ый вариант работы с конструктором
+7. Использовал template из 02-contrast-grid
+8. | Требование ТЗ | Элемент страницы | 
+|---|---|
+| Первый экран с героем и главной мыслью | `.hero` |
+| Блок с тремя фактами | `.details__grid` |
+| Завершение с результатом / действием | `.action` |
+| Контекст | `.story__lead` |
+| Центральное действие | `.story` |
+| Результат | `.hero__result` |
+| Почему раскрывает человека | `.key-point` |
+| Три обязательных факта | три `.data-card` |
+| Чёрно-белый футуристичный тон | `:root` |
+| Яркий акцент | `--color-accent` |
+| IT-тематика | моноширинный шрифт |
+
+9.Расположение Flexbox, Grid, БЭМ и медиазапроса
+
+### Flexbox
+
+| Селектор | Что делает |
+|---|---|
+| `.site-header__inner`, `.site-footer__inner` | Разводит бренд и навигацию / два абзаца по краям |
+| `.site-header__nav` | Выстраивает ссылки навигации в ряд с отступом |
+| `.key-point` | Вертикальный flex для лейбла и цитаты |
+| `.details__heading` | Лейбл слева, заголовок справа |
+| `.data-card` | Вертикальный flex с центрированием текста по вертикали |
+
+### Grid
+
+| Селектор | Что делает |
+|---|---|
+| `.page-grid` | Двухколоночная сетка всей страницы (2fr / 1fr) |
+| `.hero` | Внутренняя сетка hero: текст + сводка (2fr / 1fr) |
+| `.details__grid` | Три равные карточки `repeat(3, 1fr)` |
+| `.contact-list` | Список контактов в одну колонку с `gap` |
+
+### БЭМ
+
+| Блок | Элементы | Модификатор |
+|---|---|---|
+| `site-header` | `__inner`, `__brand`, `__nav` | — |
+| `hero` | `__main`, `__lead`, `__summary`, `__result` | — |
+| `data-card` | `__index`, `__title`, `__text` | `--accent` |
+| `details` | `__heading`, `__grid` | — |
+| `key-point` | — | — |
+| `site-footer` | `__inner` | — |
+| `action` | — | — |
+
+### Медиазапрос
+
+```css
+@media (max-width: 720px) { … }
+
+10. Результаты проверки на 360 px и 1200 px: сначала были проблемы с шириной 360px, но потом пофиксил с помощью медиазапроса и все требования выполнились
+11. Использовал DeepSeek
+12. READY FOR CUSTOMER REVIEW
